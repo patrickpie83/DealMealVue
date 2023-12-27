@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deal Meal 訂食</title>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp" rel="stylesheet">
+    <!-- sweetalert -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.10.1/sweetalert2.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- VALIDATE.JS -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/validate.js/0.13.1/validate.min.js"></script>
+    <!-- sweetalert -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.10.1/sweetalert2.js"></script>
+
+    <%- include('./layout/header'); -%>
+    
+    <section class="container">
+        <div class="row justify-content-center mt-5 mb-7">
+            <div class="col-10 px-0">
+                <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item w-50" role="loginTab">
+                      <button class="nav-link active w-100 text-dark-brown py-4 fs-4" data-bs-toggle="tab" data-bs-target="#login" type="button" role="tab" aria-controls="login" aria-selected="true">會員登入</button>
+                    </li>
+                    <li class="nav-item w-50" role="signUpTab">
+                      <button class="nav-link w-100 text-dark-brown py-4 fs-4" data-bs-toggle="tab" data-bs-target="#signUp" type="button" role="tab" aria-controls="signUp" aria-selected="false">註冊會員</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content border border-dark-brown border-top-0 py-7 d-flex flex-column align-items-center">
+                    <!-- 會員登入 -->
+                    <div class="tab-pane fade show active tabPaneWidth" id="login" role="tabpanel">
+                        <label for="loginEmail" class="form-label">電子信箱</label>
+                        <input type="email" class="form-control rounded-0 border-primary mb-4" id="loginEmail" placeholder="請輸入電子信箱">
+                        <label for="loginPassword" class="form-label">密碼</label>
+                        <input type="password" class="form-control rounded-0 border-primary mb-5" id="loginPassword" placeholder="請輸入密碼">
+                        <button type="button" class="loginBtn py-2 btn btn-primary text-light-brown w-100 rounded-0 mb-4">登入</button>
+                        <a class="text-decoration-none" href="password.html">忘記密碼？</a>
+                    </div>
+                    <!-- 註冊會員 -->
+                    <div class="tab-pane fade tabPaneWidth" id="signUp" role="tabpanel">
+                      <form class="signUpForm">
+                        <label for="signUpName" class="form-label">用戶名稱</label>
+                        <input type="text" class="form-control rounded-0 border-primary" id="signUpName" placeholder="請輸入用戶大名" name="用戶名稱">
+                        <p class="signUpNameContent text-danger"></p>
+
+                        <label for="signUpAddress" class="form-label mt-4">配送地址</label>
+                        <input type="text" class="form-control rounded-0 border-primary" id="signUpAddress" placeholder="請輸入常用地址" name="配送地址">
+                        <p class="signUpAddressContent text-danger"></p>
+                        
+                        <label for="signUpEmail" class="form-label mt-4">電子信箱</label>
+                        <input type="email" class="form-control rounded-0 border-primary" id="signUpEmail" placeholder="請輸入電子信箱" name="電子信箱">
+                        <p class="signUpEmailContent text-danger"></p>
+
+                        <label for="signUpPassword" class="form-label mt-4">密碼</label>
+                        <input type="password" class="form-control rounded-0 border-primary" id="signUpPassword" placeholder="請輸入密碼" name="密碼">
+                        <p class="signUpPasswordContent text-danger"></p>
+                        
+                        <button type="submit" class="signUpBtn mt-5 py-2 btn btn-primary text-light-brown w-100 rounded-0">註冊</button>
+                      </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <%- include('./layout/footer'); -%>
+
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+
+    <script type="module" src="../main.js"></script>
+    <script type="module" src="../assets/js/login.js"></script>
+   
+  </body>
+</html>

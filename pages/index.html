@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deal Meal 訂食</title>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp" rel="stylesheet">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- sweetalert -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.10.1/sweetalert2.css" rel="stylesheet">
+
+
+  </head>
+  <body>
+    <!-- aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- sweetalert -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.10.1/sweetalert2.js"></script>
+    
+    <%- include('./layout/header'); -%>
+    
+    <img class="backToTopBtn" src="../assets/images/icon_arrow_up.png" alt="icon_arrow_up">
+    
+    <div class="bg-primary">
+      <div class="container d-flex position-relative bannerArea">
+
+        <!-- 底色 -->
+        <div class="bg-light-brown mt-6 mb-5 bannerBackgroundFirst" style="margin-left: 24px;"></div>
+        <div class="bg-light-brown mt-6 mb-5 bannerBackgroundSecond" style="margin-left: 40px;"></div>
+        <div class="bg-light-brown mt-6 mb-5 bannerBackground" style="margin-left: 40px;"></div>
+
+        <!-- 文字區塊 -->
+        <h1 class="my-auto ms-auto bannerTextArea" data-aos="fade-left">
+          <p class="text-dark-brown mb-5 fw-bold">Deal Meal</p>
+          <p class="text-dark-brown fw-bold">處理好</p>
+          <p class="text-dark-brown fw-bold">你的每一餐</p>
+        </h1>
+
+        <!-- 三張圖 -->
+        <div class="position-absolute bannerImageArea d-flex">
+          <img class="bannerImageFirst" data-aos="fade-down" src="../assets/images/banner_1.png" alt="banner_1">
+          <img class="bannerImageSecond mt-auto ms-40" data-aos="fade-up" src="../assets/images/banner_2.png" alt="banner_2">
+          <img class="bannerImage ms-40" data-aos="fade-down" src="../assets/images/banner_3.png" alt="banner_3">
+        </div>
+
+      </div>
+
+       <!-- Swiper -->
+      <div class="swiper mySwiper py-7 py-lg-0">
+        <div class="swiper-wrapper">
+          
+          <!-- 第一張 -->
+          <div class="swiper-slide d-flex flex-column align-items-center flex-lg-row justify-content-lg-start align-items-lg-start">
+            <img class="carouselImg" src="../assets/images/增肌＿煙燻鮭魚時蔬.jpg" alt="增肌＿煙燻鮭魚時蔬">
+            <div class="carouselContent pt-3 pt-lg-7 ms-lg-7">
+              <div class="d-flex flex-column align-items-center align-items-lg-start">
+                <h3 class="fs-4 text-normal-brown border border-normal-brown rounded-24 p-3">增肌系列</h3>
+                <h2 class="fs-2 text-white mt-4">煙燻鮭魚時蔬</h2>
+                <p class="fs-4 text-white text-start mt-4">每一份量680公克</p>
+                <p class="fs-4 text-white text-start">熱量約549大卡</p>
+              </div>
+              <div class="w-100 mt-4">
+                <table class="table table-bordered border-white carouselTable w-100">
+                  <tbody>
+                    <tr>
+                      <td class="text-white">碳水化合物</td>
+                      <td class="text-white">55公克</td>
+                    </tr>
+                    <tr>
+                      <td class="text-white">蛋白質</td>
+                      <td class="text-white">50.5公克</td>
+                    </tr>
+                    <tr>
+                      <td class="text-white">脂肪</td>
+                      <td class="text-white">46公克</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="https://patrickpie83.github.io/DealMeal/meal.html?id=9a3afa77-287d-40ae-9bb7-9faed80f1d55" type="button" class="btn btn-light btn-product text-primary fs-5 w-100 rounded-0 mt-4">餐點內容</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 第二張 -->
+          <div class="swiper-slide d-flex flex-column align-items-center flex-lg-row justify-content-lg-start align-items-lg-start">
+            <img class="carouselImg" src="../assets/images/塑身＿田園蔬菜爽身餃.jpg" alt="塑身＿田園蔬菜爽身餃">
+            <div class="carouselContent pt-3 pt-lg-7 ms-lg-7">
+              <div class="d-flex flex-column align-items-center align-items-lg-start">
+                <h3 class="fs-4 text-normal-brown border border-normal-brown rounded-24 p-3">塑身系列</h3>
+                <h2 class="fs-2 text-white mt-4">田園蔬菜爽身餃</h2>
+                <p class="fs-4 text-white text-start mt-4">每一份量280公克</p>
+                <p class="fs-4 text-white text-start">熱量約140大卡</p>
+              </div>
+              <div class="w-100 mt-4">
+                <table class="table table-bordered border-white carouselTable w-100">
+                  <tbody>
+                    <tr>
+                      <td class="text-white">碳水化合物</td>
+                      <td class="text-white">70公克</td>
+                    </tr>
+                    <tr>
+                      <td class="text-white">蛋白質</td>
+                      <td class="text-white">32公克</td>
+                    </tr>
+                    <tr>
+                      <td class="text-white">脂肪</td>
+                      <td class="text-white">18公克</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="https://patrickpie83.github.io/DealMeal/meal.html?id=efaa43c1-3619-4499-8a6f-840b4188ff6b" type="button" class="btn btn-light btn-product text-primary fs-5 w-100 rounded-0 mt-4">餐點內容</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 第三張 -->
+          <div class="swiper-slide d-flex flex-column align-items-center flex-lg-row justify-content-lg-start align-items-lg-start">
+            <img class="carouselImg" src="../assets/images/早餐＿烘蛋馬芬.jpg" alt="早餐＿烘蛋馬芬">
+            <div class="carouselContent pt-3 pt-lg-7 ms-lg-7">
+              <div class="d-flex flex-column align-items-center align-items-lg-start">
+                <h3 class="fs-4 text-normal-brown border border-normal-brown rounded-24 p-3">早餐系列</h3>
+                <h2 class="fs-2 text-white mt-4">烘蛋馬芬</h2>
+                <p class="fs-4 text-white text-start mt-4">每一份量110公克</p>
+                <p class="fs-4 text-white text-start">熱量約89大卡</p>
+              </div>
+              <div class="w-100 mt-4">
+                <table class="table table-bordered border-white carouselTable w-100">
+                  <tbody>
+                    <tr>
+                      <td class="text-white">碳水化合物</td>
+                      <td class="text-white">12公克</td>
+                    </tr>
+                    <tr>
+                      <td class="text-white">蛋白質</td>
+                      <td class="text-white">6.8公克</td>
+                    </tr>
+                    <tr>
+                      <td class="text-white">脂肪</td>
+                      <td class="text-white">3公克</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a href="https://patrickpie83.github.io/DealMeal/meal.html?id=27c04a06-6960-402b-b8b5-63e2eabe027c" type="button" class="btn btn-light btn-product text-primary fs-5 w-100 rounded-0 mt-4">餐點內容</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="container position-absolute top-50 start-50 translate-middle" style="z-index: 20;">
+          <img class="swiper-button-prev" src="../assets/images/icon_arrow_shift_left.png" alt="icon_arrow_shift_left">
+          <img class="swiper-button-next" src="../assets/images/icon_arrow_shift_right.png" alt="icon_arrow_shift_right">
+        </div>
+
+      </div>
+
+      <!-- Swiper JS -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 30,
+          loop: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+    </div>
+
+    <section class="bg-light-brown py-7">
+      <div class="container p-7 border border-primary border-4 rounded-80">
+        <h2 class="fs-1 mb-7 text-center text-md-start">如何享用？</h2>
+        <div class="row justify-content-between gx-lg-0">
+
+          <div class="col-sm-6 col-lg-2 mb-6">
+            <p class="fs-2 fw-bold text-center">1.</p>
+            <div class="bg-normal-brown text-center mt-2 mt-lg-3">
+              <img class="how-icon" src="../assets/images/icon_cart.png" alt="icon_cart">
+            </div>
+            <p class="mt-2 mt-lg-6 fs-5 fw-bold">選擇你喜愛的餐點類型，加入購物車</p>
+          </div>
+
+          <div class="col-sm-6 col-lg-2 mb-6">
+            <p class="fs-2 fw-bold text-center">2.</p>
+            <div class="bg-normal-brown text-center mt-2 mt-lg-3">
+              <img class="how-icon" src="../assets/images/icon_deliver.png" alt="icon_deliver">
+            </div>
+            <p class="mt-2 mt-lg-6 fs-5 fw-bold">結帳，填寫配送方式</p>
+          </div>
+
+          <div class="col-sm-6 col-lg-2 mb-6">
+            <p class="fs-2 fw-bold text-center">3.</p>
+            <div class="bg-normal-brown text-center mt-2 mt-lg-3">
+              <img class="how-icon" src="../assets/images/icon_pay.png" alt="icon_pay">
+            </div>
+            <p class="mt-2 mt-lg-6 fs-5 fw-bold">付款進入配送流程</p>
+          </div>
+          
+          <div class="col-sm-6 col-lg-2 mb-6">
+            <p class="fs-2 fw-bold text-center">4.</p>
+            <div class="bg-normal-brown text-center mt-2 mt-lg-3">
+              <img class="how-icon" src="../assets/images/icon_freezer.png" alt="icon_freezer">
+            </div>
+            <p class="mt-2 mt-lg-6 fs-5 fw-bold">餐點配送到府後，記得先冷藏</p>
+          </div>
+
+          <div class="col-sm-6 col-lg-2 mb-6">
+            <p class="fs-2 fw-bold text-center">5.</p>
+            <div class="bg-normal-brown text-center mt-2 mt-lg-3">
+              <img class="how-icon" src="../assets/images/icon_eat.png" alt="icon_eat">
+            </div>
+            <p class="mt-2 mt-lg-6 fs-5 fw-bold">想吃的時候，依照建議方式加熱後，即可享用！</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="position-relative bg-normal-brown py-7 py-md-0">
+      <!-- 底圖 -->
+      <img class="couponAreaImg" src="../assets/images/index_coupon.png" alt="index_coupon">
+
+      <!-- 透明白底 -->
+      <div class="couponAreaUnder container bg-white h-75 opacity-80 d-none d-md-block rounded-80">
+      </div>
+
+      <!-- 內容 -->
+      <div class="container px-7 couponAreaContent">
+
+        <h2 class="fs-1 mb-7 text-center text-md-start">領取優惠碼</h2>
+        <p class="mb-3 mb-md-5 fw-bold">DealMeal感謝祭！<br>筆筆訂單皆享9折</p>
+        
+        <div class="d-md-flex">
+          <div class="bg-white d-flex couponCode">
+            <input class="border-0 w-100 couponText bg-white text-center" type="text" value="dealmealthanks" disabled>
+          </div>
+          <button type="button" class="btn btn-primary text-light-brown rounded-0 py-2 py-md-4 copyCouponBtn">立即複製</button>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-md-4">
+            <a href="products.html" class="w-100 btn btn-primary text-light-brown rounded-0 py-3 py-md-4 fs-5 mt-7">馬上挑選餐點
+              <span class="material-icons-round text-light-brown align-bottom fs-2">arrow_forward</span>
+            </a>
+          </div>
+        </div>
+
+        
+      </div>
+    </section>
+
+
+    <%- include('./layout/footer'); -%>
+    <script type="module" src="../main.js"></script>
+    <script type="module" src="../assets/js/aos.js"></script>
+    <script type="module" src="../assets/js/index.js"></script>
+  </body>
+</html>

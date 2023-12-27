@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>訂食後台管理</title>
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons%7CMaterial+Icons+Outlined%7CMaterial+Icons+Two+Tone%7CMaterial+Icons+Round%7CMaterial+Icons+Sharp" rel="stylesheet">
+    <!-- sweetalert -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.10.1/sweetalert2.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- sweetalert -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert2/11.10.1/sweetalert2.js"></script>
+
+    <%- include('./layout/admin-header'); -%>
+    
+   <div class="container py-7">
+    <div class="row gx-3 gy-2">
+      <div class="col-12 mb-4 mt-0">
+        <a class="text-decoration-none text-danger deleteBtn" href="">刪除此品項</a>
+      </div>
+
+      <div class="row gx-3 gy-2 detailContent">
+      </div>
+      
+    </div>
+
+    <div class="row justify-content-end mt-5">
+      <div class="col-3">
+        <button type="button" class="py-3 btn btn-secondary text-white w-100 rounded-0" onclick="javascript:history.go(-1);">取消</button>
+      </div>
+      <div class="col-3">
+        <button type="button" class="py-3 btn btn-danger text-white w-100 rounded-0 sendBtn">送出修改</button>
+      </div>
+    </div>
+   </div>
+    
+
+   <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+   <script type="module" src="../main.js"></script>
+   <script type="module" src="../assets/js/admin-detail.js"></script>
+  </body>
+</html>

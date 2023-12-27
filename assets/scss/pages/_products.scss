@@ -1,0 +1,88 @@
+.stickyWithNav{
+    position:sticky;
+    top:112px; //nav的高度
+    z-index: 10;
+}
+
+.soldOutFilter{
+    opacity: 0.3;
+}
+
+//滑鼠移過時才會出現
+.cardBtn{
+    display: none;
+}
+
+.card{
+
+    &:hover{
+        a{
+            opacity: 1;
+        }
+        
+        .cardBtn{
+            @include pc{
+                display: block;
+                background-color: $primary;
+                color: $light-brown;
+                border: 0;
+                width: 95%;
+                position: absolute;
+                z-index: 2;
+                opacity: 0.7;
+                bottom: 2%;
+                left: 50%;
+                transform:translate(-50%);
+            
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+}
+
+.productName{
+    font-size: 20px;
+    font-weight: bold;
+    @include pad{
+        font-size: 24px;
+    }
+
+}
+
+.productNutrition{
+    font-size: 12px;
+
+    @include pad{
+        font-size: 16px;
+    }
+}
+
+.productPrice{
+    font-size: 16px;
+    @include pad{
+        font-size: 24px;
+    }
+}
+
+
+.cartIcon{
+    background-color:$light-brown;
+
+    &:hover{
+        background-color: $normal-brown;
+    }
+
+}
+
+
+.pageBtn{
+    width: 32px;
+    height: 48px;
+    @include pad{
+        width: 48px;
+        height: 48px;
+    }
+}

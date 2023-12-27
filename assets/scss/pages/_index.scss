@@ -1,0 +1,254 @@
+.backToTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color:white; /* Set a background color */
+  color: $primary; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 8px; /* Some padding */
+  border-radius: 20px; /* Rounded corners */
+  // font-size: 18px; /* Increase font size */
+  width: 40px;
+  height: 40px;
+  opacity: 0.8;
+}
+
+.backToTopBtn:hover {
+  background-color:$light-brown; /* Add a dark-grey background on hover */
+}
+
+.bannerArea{
+  height: 600px;
+  @include pc-xxl{
+    height: 100%;
+  }
+}
+
+.bannerBackgroundFirst{
+  @include pc{
+    width: 272px;
+    height: 557px;
+  }
+}
+
+.bannerBackgroundSecond{
+  @include pc{
+    width: 272px;
+    height: 557px;
+  }
+}
+
+.bannerBackground{
+  @include pc-xxl{
+    width: 272px;
+    height: 557px;
+  }
+}
+
+.bannerTextArea{
+  width: 50%;
+  font-size: 28px;
+  @include sm{
+    width: 40%;
+  }
+  @include pc{
+    width: 30%;
+    font-size: 48px;
+  }
+  @include pc-xl{
+    width: 35%;
+    font-size: 64px;
+  }
+  @include pc-xxl{
+    width: 25%;
+    font-size: 64px;
+  }
+}
+
+.bannerImageArea{
+  width: 45%;
+  height: 100%;
+  @include pc{
+    width: 100%;
+  }
+}
+
+.bannerImageFirst{
+  width: 100%;
+  @include pc{
+    display: block;
+    width: 272px;
+    height: 582px;
+  }
+}
+
+.bannerImageSecond{
+  display: none;
+  @include pc{
+    display: block;
+    width: 272px;
+    height: 582px;
+  }
+}
+
+.bannerImage{
+  display: none;
+  @include pc-xxl{
+    display: block;
+    width: 272px;
+    height: 582px;
+  }
+}
+
+.swiper {
+  width: 100%;
+  border-top: 1px solid $light-brown;
+  height: 800px;
+  @include pc{
+    height: 642px;
+  }
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background:$primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+
+.swiper-button-next,.swiper-button-prev{
+  width: 48px;
+  height: 48px;
+}
+
+.swiper-button-next:hover,.swiper-button-prev:hover{
+  opacity: 0.5;
+}
+
+
+
+
+
+.carouselImg{
+  // display: none !important;
+  height: 240px !important;
+  @include pc{
+    display: block !important;
+    width: 50% !important;
+    height: 100% !important;
+  }
+}
+
+.carouselContent{
+  @include pc{
+    margin-right: 170px;
+    width: 100%;
+  }
+}
+
+.carouselTable{
+  font-size: 16px;
+  @include pc{
+    font-size: 24px;
+  }
+}
+
+
+.btn-product:hover{
+  background-color: $light-brown !important;
+}
+
+
+.how-icon{
+  width: 84px;
+  height: 84px;
+  margin-top: 24px;
+  margin-bottom: 24px;
+
+  @include pc{
+    width: 84px;
+    height: 84px;
+    margin-top: 84px;
+    margin-bottom: 84px;
+  }
+
+
+}
+
+
+.couponAreaImg{
+  height: 0px;
+
+  @include pad{
+    width: 100%;
+    height: 902px;
+  }
+
+}
+
+.couponAreaUnder{
+  
+  @include pad{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+  }
+
+}
+
+.couponAreaContent{
+  border: 4px solid $primary;
+  border-radius: 80px;
+  padding: 72px 0px 72px 0px;
+  @include pad{
+    border: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+  }
+
+  p{
+    font-size: 20px;
+    @include pad{
+      font-size: 36px;
+    }
+  }
+
+}
+
+.couponCode{
+  font-size: 20px;
+  width: 100%;
+  padding: 8px 0px;
+  @include pad{
+    font-size: 36px;
+    width: 75%;
+  }
+
+}
+
+
+.copyCouponBtn{
+  width: 100%;
+  @include pad{
+    width: 25%;
+  }
+
+}
